@@ -13,8 +13,6 @@
 # You should have received a copy of the GNU General Public License 
 # along with Foobar. If not, see <https://www.gnu.org/licenses/>.
 
-from asyncio.windows_events import NULL
-
 from openpyxl import load_workbook, Workbook
 from openpyxl.utils import get_column_letter, column_index_from_string
 from openpyxl.utils.cell import coordinate_from_string
