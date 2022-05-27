@@ -15,8 +15,8 @@ at http://www.gnu.org/licenses/translations.html.
 Вы можете распространять перевод, с изменениями или без, только с соблюдением
 условий, описанных по адресу: http://www.gnu.org/licenses/translations.html.
 
-###Генеральная публичная лицензия GNU. Редакция 3,
-###29 июня 2007 г.
+<div align="center">Генеральная публичная лицензия GNU. Редакция 3,</div>
+<div align="center">29 июня 2007 г.</div>
 
 Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>. Перевод:
 Павел Протасов <pvphome@gmail.com>, 2016 г. Разрешается свободно копировать и
