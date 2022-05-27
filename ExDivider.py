@@ -13,6 +13,12 @@
 # You should have received a copy of the GNU General Public License 
 # along with Foobar. If not, see <https://www.gnu.org/licenses/>.
 
+import sys, os
+import datetime
+import json
+from pathlib import Path
+from configparser import ConfigParser
+
 from openpyxl import load_workbook, Workbook
 from openpyxl.utils import get_column_letter, column_index_from_string
 from openpyxl.utils.cell import coordinate_from_string
@@ -22,13 +28,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QListView, Q
     QInputDialog, QShortcut, QMessageBox
 from PyQt5.QtCore import Qt, QStringListModel, QVariant, QFileInfo
 
-import sys, os
-import datetime
-import json
-from pathlib import Path
-from configparser import ConfigParser
 from table import Ui_MainWindow
-
 from Components import DialogWidgetMenu, DialogWidgetMultipleMenu, LicenseWindow, WheelBar, SheetModel
 
 def replace_illegible_chars(value, deletechars):
