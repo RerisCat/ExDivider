@@ -167,7 +167,7 @@ class Ui_MainWindow(object):
         self.label_source.setText(_translate("MainWindow", "Источник информации:"))
         self.label_pattern.setText(_translate("MainWindow", "Шаблон:"))
         self.button_select_pattern.setText(_translate("MainWindow", "Выбрать файл"))
-        self.button_start.setText(_translate("MainWindow", "Начать разделять файлы"))
+        self.button_start.setText(_translate("MainWindow", "Начать создавать файлы"))
         self.label_2.setText(_translate("MainWindow", "Добавить текст к имени файла:"))
         self.label_3.setText(_translate("MainWindow", "Добавить порядковый номер к концу файла"))
         self.label_4.setText(_translate("MainWindow", "Использовать столбец как новые имена:"))

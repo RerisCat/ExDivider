@@ -175,7 +175,7 @@ selection-background-color: rgb(166, 221, 255);
      </rect>
     </property>
     <property name="text">
-     <string>Начать разделять файлы</string>
+     <string>Начать создавать файлы</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="line_edit_added">
