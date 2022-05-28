@@ -100,12 +100,14 @@ class Window(QMainWindow, Ui_MainWindow):
                 
     def line_source_edited(self):
         if self.source_path == self.line_edit_source.text():
+            self.line_edit_source.setStyleSheet("background-color: rgb(176, 255, 170);")
             return
 
         self.process_source_file(self.line_edit_source.text())
         
     def line_pattern_edited(self):
         if self.pattern_path == self.line_edit_pattern.text():
+            self.line_edit_pattern.setStyleSheet("background-color: rgb(176, 255, 170);")
             return
 
         self.process_pattern_file(self.line_edit_pattern.text())
@@ -243,9 +245,12 @@ class Window(QMainWindow, Ui_MainWindow):
             self.progress_bar.setValue(0)
             
             self.refresh_list_items()
+
+            self.line_edit_source.setStyleSheet("background-color: rgb(176, 255, 170);")
             return True
         else:
             if showWarning:
+                self.line_edit_source.setStyleSheet("background-color: rgb(255, 179, 179);")
                 self.showWarning("Файл " + path + " не является excel файлом")
             return False
         
@@ -277,9 +282,12 @@ class Window(QMainWindow, Ui_MainWindow):
             self.refresh_tabs()
             self.progress_bar.setValue(0)
             self.refresh_table()
+
+            self.line_edit_pattern.setStyleSheet("background-color: rgb(176, 255, 170);")
             return True
         else:
             if showWarning:
+                self.line_edit_pattern.setStyleSheet("background-color: rgb(255, 179, 179);")
                 self.showWarning("Файл " + path + " не является excel файлом")
             return False
         
@@ -605,7 +613,9 @@ class Window(QMainWindow, Ui_MainWindow):
          
         self.progress_bar.setValue(0)
         self.line_edit_source.setText('')
+        self.line_edit_source.setStyleSheet("")
         self.line_edit_pattern.setText('')
+        self.line_edit_pattern.setStyleSheet("")
         
         self.table_view.setModel(SheetModel(Workbook().create_sheet("Пустой")))
         
