@@ -291,9 +291,10 @@ class LicenseWindow(QWidget):
                                    "ExDivider распространяется БЕЗО ВСЯКИХ ГАРАНТИЙ. Эта программа распространяется \n"+
                                    "на условиях Стандартной общественной лицензии GNU (GNU GPL v3). \n\n"+
                                    "Для создания были использованы библиотеки: \n"+
-                                   "    -openpyxl, лицензия MIT License\n"
-                                   "    -Qt5, лицензия GNU GPL v3\n"
-                                   "    -PyQt5, лицензия GNU GPL v3\n\n"
+                                   "    -openpyxl, лицензия MIT License\n"+
+                                   "    -PyInstaller, лицензия GNU GPL v2\n"+
+                                   "    -Qt5, лицензия GNU GPL v2\n"+
+                                   "    -PyQt5, лицензия GNU GPL v3\n\n"+
                                    "Исходный код: https://github.com/RerisCat/ExDivider")
 
         layout.addWidget(self.short_license)
